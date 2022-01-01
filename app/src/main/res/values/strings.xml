@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">smsRedirect</string>
+    <string name="last_received_message_body">Last Received Message Body</string>
+    <string name="phone_number_of_message_received">Phone Number of Message Received</string>
+    <string name="enter_the_number">Enter the Number</string>
+    <string name="start_service">Start/Stop Service</string>
+</resources>
