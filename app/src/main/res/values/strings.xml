@@ -4,4 +4,8 @@
     <string name="phone_number_of_message_received">Phone Number of Message Received</string>
     <string name="enter_the_number">Enter the Number</string>
     <string name="start_service">Start/Stop Service</string>
+    <string-array name="simcard">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
 </resources>
