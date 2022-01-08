@@ -139,14 +139,18 @@ class MainActivity : AppCompatActivity() {
 
     private fun sendMsg() {
         val sms = SmsManager.getDefault()
-        if (sendNumber.text.toString() != "") {
-            sms.sendTextMessage(
-                sendNumber.text.toString(),
-                "ME",
-                sms_body.text.toString(),
-                null,
-                null
-            )
+        val str=sendNumber.text.toString()
+        val list: List<String> = str.split(",").toList()
+        for (i in list.indices) {
+            if (list[i] != "") {
+                sms.sendTextMessage(
+                    list[i],
+                    "ME",
+                    sms_body.text.toString(),
+                    null,
+                    null
+                )
+            }
         }/*else{
             sms.sendTextMessage(
                 phone_rec_sms.text.toString(),
