@@ -9,3 +9,8 @@ In case if we don't enter the number to which the sms is to be redirected than i
 Added the functionality of Simcard:- 
  
 Whichever Simcard you select, only the messages received on that sim card will be redirected.
+
+Please Note that the there 2 fields which need to be inputed by the user
+
+ 1. The user can enter the list of numbers seperated by "," to which the received SMS will be sent.
+ 2. This field user has to enter the simcard number, only from this number the sms will be read. 
