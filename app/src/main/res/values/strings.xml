@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SendSms</string>
+    <string name="enter_the_sim_card_number">Enter the Sim Card Number</string>
+    <string name="enter_the_message">Enter the Message</string>
+    <string name="import_contacts_file">Import Contacts File</string>
+    <string name="note">Note: Please import the text file which contains\n \', \' (Comma) seperated numbers without national\n code \'+91\' or \'0\'</string>
+    <string name="send">Send</string>
+    <string name="invalid_numbers">Invalid Numbers</string>
+    <string name="check_file">Check File</string>
+</resources>
