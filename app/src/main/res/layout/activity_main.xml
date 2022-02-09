@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="32dp"
-        android:inputType="text"
+        android:inputType="textMultiLine"
         app:flow_wrapMode="aligned"
         android:scrollbarAlwaysDrawVerticalTrack="true"
         android:hint="@string/enter_the_message"
