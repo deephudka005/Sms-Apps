@@ -15,6 +15,7 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.content.ContextCompat.getSystemService
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.BufferedReader
 import java.io.IOException
@@ -141,7 +142,14 @@ class MainActivity : AppCompatActivity() {
 
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP_MR1)
     private fun sendMsg(sendNumber: String) {
-        val sms = SmsManager.getDefault()  // uses default simcard registered for sending sms
+        val sms = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            getSystemService(SmsManager::class.java)
+        }else{
+            TODO()
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            sms.createForSubscriptionId(2)
+        } // uses default simcard registered for sending sms
         val list: List<String> = sendNumber.split(",").toList()
         for (i in list.indices) {
             if (list[i] != "") {
