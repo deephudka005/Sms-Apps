@@ -14,3 +14,7 @@ Please Note that the there 2 fields which need to be inputed by the user
 
  1. The user can enter the list of numbers seperated by "," to which the received SMS will be sent.
  2. This field user has to enter the simcard number, only from this number the sms will be read. 
+
+# SendSms App
+
+This project is present in SendSms branch.
