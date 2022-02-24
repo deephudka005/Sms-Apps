@@ -1,7 +1,3 @@
-# Note
-
-Both the Apps were made during my internship with KGE Technologies Pvt. Ltd.
-
 # SmsRedirect-App
 
 The App redirects the message received to the entered number using the default sim which is set for sending message. It also shows the sender's mobile no. and the message body. 
@@ -22,3 +18,5 @@ Please Note that the there 2 fields which need to be inputed by the user
 # SendSms App
 
 This project is present in SendSms branch.
+
+**Note :- Both the Apps were made during my internship with KGE Technologies Pvt. Ltd.**
